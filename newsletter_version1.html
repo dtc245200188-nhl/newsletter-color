@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Newsletter - Version 1</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* =========================
+           BẢNG MÀU PHIÊN BẢN 1
+           Modern & Fresh
+        ========================= */
+
+        :root {
+            --primary-color: #2563EB;
+            --secondary-color: #7C3AED;
+            --accent-color: #F59E0B;
+
+            --dark-color: #172554;
+            --text-color: #1F2937;
+            --light-bg-color: #F8FAFC;
+            --white-color: #FFFFFF;
+
+            --primary-dark: #1D4ED8;
+        }
+
+        body {
+            background-color: var(--light-bg-color);
+            color: var(--text-color);
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header */
+        .newsletter-header {
+            background: linear-gradient(135deg,
+                    var(--primary-color),
+                    var(--secondary-color));
+            color: white;
+            border-radius: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        /* Tiêu đề */
+        .text-primary-custom {
+            color: var(--primary-color);
+        }
+
+        .text-secondary-custom {
+            color: var(--secondary-color);
+        }
+
+        /* Card */
+        .custom-card {
+            background-color: var(--white-color);
+            border: none;
+            border-radius: 16px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Feature 1 */
+        .feature-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border-radius: 16px;
+        }
+
+        /* Feature 2 */
+        .feature-secondary {
+            background-color: var(--secondary-color);
+            color: white;
+            border-radius: 16px;
+        }
+
+        /* Button */
+        .btn-custom {
+            background-color: var(--accent-color);
+            color: #172554;
+            border: none;
+            font-weight: bold;
+            padding: 12px 25px;
+            border-radius: 10px;
+        }
+
+        .btn-custom:hover {
+            background-color: #D97706;
+            color: white;
+        }
+
+        /* Footer */
+        .newsletter-footer {
+            background-color: var(--dark-color);
+            color: white;
+            border-radius: 16px;
+        }
+
+        /* Hình minh họa */
+        .illustration {
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container py-5">
+
+        <!-- HEADER -->
+        <header class="newsletter-header p-5 mb-5">
+
+            <div class="row align-items-center">
+
+                <div class="col-md-8">
+
+                    <div class="logo mb-3">
+                        Trello Newsletter
+                    </div>
+
+                    <h1 class="display-5 fw-bold">
+                        Làm việc thông minh hơn mỗi ngày
+                    </h1>
+
+                    <p class="lead">
+                        Khám phá những tính năng và mẹo mới giúp bạn
+                        quản lý công việc hiệu quả hơn.
+                    </p>
+
+                    <a href="#" class="btn btn-custom mt-3">
+                        Khám phá ngay
+                    </a>
+
+                </div>
+
+                <div class="col-md-4 mt-4 mt-md-0">
+
+                    <div class="illustration">
+                        📋
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- INTRODUCTION -->
+        <section class="custom-card p-4 mb-4">
+
+            <h2 class="text-primary-custom fw-bold">
+                Chào mừng bạn đến với bản tin!
+            </h2>
+
+            <p class="mt-3">
+                Đây là newsletter dành cho những người muốn tổ chức
+                công việc khoa học, nâng cao năng suất và làm việc
+                hiệu quả hơn mỗi ngày.
+            </p>
+
+            <p>
+                Hãy cùng khám phá những tính năng nổi bật và những
+                mẹo hữu ích trong tuần này.
+            </p>
+
+            <a href="#" class="btn btn-custom">
+                Tìm hiểu thêm
+            </a>
+
+        </section>
+
+
+        <!-- FEATURES -->
+        <section class="row mb-4">
+
+            <!-- Feature 1 -->
+            <div class="col-md-6 mb-4">
+
+                <div class="feature-primary h-100 p-4">
+
+                    <h3 class="fw-bold">
+                        📌 Quản lý công việc
+                    </h3>
+
+                    <p class="mt-3">
+                        Sắp xếp nhiệm vụ thành các bảng,
+                        danh sách và thẻ để dễ dàng theo dõi
+                        tiến độ công việc.
+                    </p>
+
+                    <button class="btn btn-light">
+                        Xem tính năng
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Feature 2 -->
+            <div class="col-md-6 mb-4">
+
+                <div class="feature-secondary h-100 p-4">
+
+                    <h3 class="fw-bold">
+                        ⚡ Tăng năng suất
+                    </h3>
+
+                    <p class="mt-3">
+                        Sử dụng các công cụ trực quan để
+                        giảm thời gian quản lý và tập trung
+                        vào những công việc quan trọng.
+                    </p>
+
+                    <button class="btn btn-light">
+                        Khám phá
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="custom-card text-center p-5 mb-5">
+
+            <h2 class="text-secondary-custom fw-bold">
+                Sẵn sàng làm việc hiệu quả hơn?
+            </h2>
+
+            <p class="mt-3">
+                Bắt đầu tổ chức công việc của bạn ngay hôm nay.
+            </p>
+
+            <a href="#" class="btn btn-custom mt-2">
+                Bắt đầu ngay
+            </a>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer class="newsletter-footer text-center p-4">
+
+            <h5>
+                Trello Newsletter
+            </h5>
+
+            <p class="mb-1">
+                Cảm ơn bạn đã theo dõi bản tin của chúng tôi.
+            </p>
+
+            <small>
+                © 2026 Newsletter. All rights reserved.
+            </small>
+
+        </footer>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
